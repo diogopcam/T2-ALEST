@@ -1,0 +1,23 @@
+
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class Teste {
+
+    @Test
+    public void adicionarNodo()
+    {
+        Nodo n = new Nodo ("A",2333);
+
+        Arvore a1 = new Arvore (n);
+        
+        a1.isEmpty();
+        boolean expected = false;
+        boolean actual = tree.isEmpty();
+
+        assertEquals( expected, actual );
+    }
+}
