@@ -16,12 +16,13 @@ public class Arvore {
     public boolean isEmpty() {
         return root == null;
     }
+
     //verifica se a raíz é nula
 
-    // public void insertNodo (Node n, String nome){
-    //     root = insertRec(root, nome);
-    // }
-    // //insere um nodo raíz
+    public void insertRoot (Nodo n){
+        this.root = n;
+    }
+    //insere um nodo raíz
 
     // private Node insertRec(Node root, String nome) {
     //     if (root == null) {

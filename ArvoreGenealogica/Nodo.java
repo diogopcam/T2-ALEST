@@ -31,16 +31,16 @@ public class Nodo {
         this.terra = terra;
     }
 
-    public void addFilho(Nodo pai, Nodo) {
+    public void addFilho(Nodo filho){
         this.filho = filho;
         listaFilhos.add(filho);
     }
     // define o(s) filho(s) de umn nodo
 
-    public void addPai(Nodo pai){
-        this.pai = pai;
-    }
-    //define o pai de um nodo
+    // public void addPai(Nodo pai){
+    //     this.pai = pai;
+    // }
+    // //define o pai de um nodo
 
     public Nodo getFilho() {
         return filho;
@@ -52,12 +52,11 @@ public class Nodo {
         System.out.println("Quantidade de terras: "+getTerra());
     }
 
-    public void filhosToString(Nodo pai){
-        for(Nodo n:listaFilhos){
-            System.out.println("Nome do nodo: "+getNome());
-            System.out.println("Quantidade de terras: "+getTerra());
+    public void filhosToString(){
+        for(Nodo n:this.listaFilhos){
+            System.out.println("Nome do nodo: "+n.getNome());
+            System.out.println("Quantidade de terras: "+n.getTerra());
             System.out.println(" ");
         }
     }
-   
 }
