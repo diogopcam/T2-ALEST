@@ -12,10 +12,6 @@ public class Nodo {
         listaFilhos = new ArrayList<>();
     }
 
-    public Nodo(String nome){
-        this.nome = nome;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -34,6 +30,10 @@ public class Nodo {
 
     public void addFilho(Nodo filho){
         listaFilhos.add(filho);
+    }
+
+    public ArrayList<Nodo> getListaFilhos() {
+        return listaFilhos;
     }
 
     // public int defineTerrasFilho(){

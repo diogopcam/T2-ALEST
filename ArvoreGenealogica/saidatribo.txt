@@ -1,6 +1,10 @@
 Funcionou: 800
-NODORAIZ
-NODOFILHO
-400
 Nome do nodo: NODORAIZ
 Quantidade de terras: 800
+Primeiro filho adicionado com sucesso!
+Nome do nodo: NODOFILHO
+Quantidade de terras: 1100
+ 
+Nome do nodo: NODOFILHOREC
+Quantidade de terras: 800
+ 
