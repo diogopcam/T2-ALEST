@@ -1,0 +1,6 @@
+Funcionou: 800
+NODORAIZ
+NODOFILHO
+400
+Nome do nodo: NODORAIZ
+Quantidade de terras: 800

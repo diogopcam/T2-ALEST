@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class EntradaSaida {
-    Scanner entrada = null; 
+    Scanner entrada; 
     //DEFINE A ENTRADA DE DADOS                // Atributo para entrada de dados (entrada)
     PrintStream saidaPadrao = System.out;   // Guarda a saida padrao - tela(console) (saida)
     //SAIDA 
@@ -24,8 +24,6 @@ public class EntradaSaida {
         }
         Locale.setDefault(Locale.ENGLISH);   // Ajusta para ponto decimal
         entrada.useLocale(Locale.ENGLISH);
-
-        // Implemente aqui o seu codigo adicional do construtor
     }
 
     // Restaura E/S padrao de tela(console)/teclado
@@ -34,5 +32,8 @@ public class EntradaSaida {
         entrada = new Scanner(System.in);
     }
 
-    
+
+    public Scanner getEntrada() {
+        return entrada;
+    }
 }

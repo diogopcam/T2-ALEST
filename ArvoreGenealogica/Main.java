@@ -1,42 +1,50 @@
 import static org.junit.jupiter.api.DynamicTest.stream;
-
 import org.junit.platform.engine.support.hierarchical.Node;
 
 public class Main{
     public static void main(String args[]){
-        Arvore arvore = new Arvore();
-        Arvore arvoreDois = new Arvore();
-        
-        Nodo raiz = new Nodo("Raiz da arvore", 200);
-        arvore.insertRoot(raiz);
 
-        Nodo raizArvoreDois = new Nodo("Raiz da arvore dois", 500);
-        arvoreDois.insertRoot(raizArvoreDois);
+        EntradaSaida entradaSaida = new EntradaSaida();
+
+        if(entradaSaida.getEntrada() != null){
+
+            String primeiraLinha = entradaSaida.getEntrada().nextLine();
+            String[] camposSeparados = primeiraLinha.split(" ");
+
+            int quantTerras = Integer.parseInt(camposSeparados[0]);
+            //Essa é a quantidade de guerras do primeiro guerreiro
+
+            // Exemplo: 103787
+
+            System.out.println("Funcionou: "+quantTerras);
+
+            //Segunda linha: define a raíz e inicia a árvore
+            
+            // Exemplo: Thorgestax Deldriralex 4626
+            //          PAI        FILHO       TERRAS CONQUISTADAS
+
+            String paiFilhoTerras = entradaSaida.getEntrada().nextLine();
+            String[] divide = paiFilhoTerras.split(" ");
+            String raiz = divide[0];
+            String filho = divide[1];
+            int terras = Integer.parseInt(divide[2]);
+            Arvore arvore = new Arvore(new Nodo(raiz, quantTerras));
+            // Aqui inicializei a árvore com as informações dadas pela segunda linha do pergaminho.
+
+            System.out.println(raiz);
+            System.out.println(filho);
+            System.out.println(terras + 100);
+            // Quebra das linhas em elementos individuais funcionando!
+
+            arvore.getRoot().nodoToString();
+            // Definição da raíz da árvore funcionando também!
+
+            // A partir da terceira linha podemos fazer um laço de repetição para inserir os filhos e definir a quantidade 
+            // de terras até o Scanner encontrar uma linha em branco
+            //    
 
 
-        int quantTerras = raiz.getTerra();
-
-        Nodo filhoUm = new Nodo("Sou o primeiro filho", quantTerras/3);
-        Nodo filhoDois = new Nodo("Sou o segundo filho", quantTerras/3);
-        Nodo filhoTres = new Nodo("Sou o terceiro filho", quantTerras/3);
-        //quantidade de terras do pai dividido pelo numero de filhos (definir quantas terras cada filho terá)
-        //o primeiro filho recebe a quantidade total de terras
-
-        raiz.addFilho(filhoUm);
-        raiz.addFilho(filhoDois);
-        raiz.addFilho(filhoTres);
-
-        raiz.filhosToString();
-
-        int quantTerrasArvoreDois = arvoreDois.getRoot().getTerra();
-        Nodo filhoUmArv2 = new Nodo("Sou o primeiro filho da segunda arvore", quantTerrasArvoreDois/3);
-        Nodo filhoDoisArv2 = new Nodo("Sou o segundo filho da segunda arvore", quantTerrasArvoreDois/3);
-        Nodo filhoTresArv3 = new Nodo("Sou o terceiro filho da segunda arvore", quantTerrasArvoreDois/3);
-
-        raizArvoreDois.addFilho(filhoUmArv2);
-        raizArvoreDois.addFilho(filhoDoisArv2);
-        raizArvoreDois.addFilho(filhoTresArv3);
-
-        raizArvoreDois.filhosToString();
+        }
     }
 }
+
