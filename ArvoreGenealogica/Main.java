@@ -8,13 +8,12 @@ public class Main{
 
         if(entradaSaida.getEntrada() != null){
 
+            // 12 - 14: Quantidade de terras do primeiro guerreiro, que é a raíz da árvore
             String primeiraLinha = entradaSaida.getEntrada().nextLine();
             String[] camposSeparados = primeiraLinha.split(" ");
-
             int quantTerras = Integer.parseInt(camposSeparados[0]);
-            //Essa é a quantidade de guerras do primeiro guerreiro
 
-
+            // 17 - 30: Fora do loop, crio o primeiro guerreiro (raíz) e seu filho
             String paiFilhoTerras = entradaSaida.getEntrada().nextLine();
             String[] divide = paiFilhoTerras.split(" ");
             String primeiroGuerreiro = divide[0];
@@ -22,10 +21,8 @@ public class Main{
             int terras = Integer.parseInt(divide[2]);
             Nodo raiz = new Nodo(primeiroGuerreiro, quantTerras);
             Arvore arvore = new Arvore(raiz);
-            // Segunda linha (cria o primeiro guerreiro(raíz))
 
-            raiz.nodoToString();
-
+            // 26 - 31: Linhas de teste para confirmar o funcionamento do método addFilhoRec
             if(arvore.addFilhoRec(raiz, primeiroGuerreiro, filho, terras)){
                 System.out.println("Recursividade funcionando!");
                 raiz.filhosToString();
@@ -33,32 +30,29 @@ public class Main{
                 System.out.println("Recursividade não funcionando!");
             }
 
-            String terceiraLinha = entradaSaida.getEntrada().nextLine();
-            String[] terceiraLinhaQuebra = terceiraLinha.split(" ");
-            String paiT = terceiraLinhaQuebra[0];
-            String filhoT = terceiraLinhaQuebra[1];
-            int terrasT = Integer.parseInt(terceiraLinhaQuebra[2]);
+            // 34 - 53: Loop de repetição para criação da árvore
+            while(entradaSaida.getEntrada().hasNextLine()){
+                String linhaRep = entradaSaida.getEntrada().nextLine();
+                String[] linhaRepQuebra = linhaRep.split(" ");
 
-            if(arvore.addFilhoRec(raiz, paiT, filhoT, terrasT)){
-                System.out.println("Recursividade funcionando!");
-                //arvore.retornaNodo(raiz, paiT).filhosToString();
-            } else {
-                System.out.println("Recursividade não funcionando!");
-            }
+                String paiL = linhaRepQuebra[0];
 
-            String quartaLinha = entradaSaida.getEntrada().nextLine();
-            String[] quartaLinhaQuebra = quartaLinha.split(" ");
-            String paiQ = quartaLinhaQuebra[0];
-            String filhoQ = quartaLinhaQuebra[1];
-            int terrasQ = Integer.parseInt(quartaLinhaQuebra[2]);
+                String filhoL = linhaRepQuebra[1];
 
-            if(arvore.addFilhoRec(raiz, paiQ, filhoQ, terrasQ)){
-                System.out.println("Recursividade funcionando!");
-                arvore.retornaNodo(raiz, paiQ).filhosToString();
-            } else {
-                System.out.println("Recursividade não funcionando!");
+                int terrasL = Integer.parseInt(linhaRepQuebra[2]);
+
+                boolean teste = arvore.addFilhoRec(raiz, paiL, filhoL, terrasL);
+
+                if(teste == true){
+                    System.out.println("Recursividade funcionando!");
+                    arvore.retornaNodo(raiz, filhoL).nodoToString();
+                    System.out.println(" ");
+                } else {
+                    System.out.println("Recursividade não funcionando ou esse pai não existe!");
+                }
             }
     }
 }
 }
+
 

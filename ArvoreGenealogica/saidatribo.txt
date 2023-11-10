@@ -1,19 +1,41 @@
-Nome do nodo: NODORAIZ
-Quantidade de terras: 800
-Nenhum pai definido pois essa é a raíz da Árvore - NODORAIZ
- 
 Recursividade funcionando!
-Nome do nodo: NODOFILHO
-Pai do nodo: NODORAIZ
-Quantidade de terras: 300
- 
-Recursividade funcionando!
-Recursividade funcionando!
-Nome do nodo: NODOFILHODOIS
-Pai do nodo: NODOFILHO
-Quantidade de terras: 400
- 
-Nome do nodo: NODOFILHOTRES
-Pai do nodo: NODOFILHO
+Nome do nodo: FILHO
+Pai do nodo: PAI
 Quantidade de terras: 200
+ 
+Recursividade funcionando!
+Nome do nodo: FILHODOIS
+Quantidade de terras: 300
+Pai do nodo: PAI
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: NETO
+Quantidade de terras: 200
+Pai do nodo: FILHO
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: NETODOIS
+Quantidade de terras: 100
+Pai do nodo: FILHO
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: FILHOTRES
+Quantidade de terras: 400
+Pai do nodo: PAI
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: BISNETO
+Quantidade de terras: 100
+Pai do nodo: NETO
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: SEGUNDOBISNETO
+Quantidade de terras: 50
+Pai do nodo: NETO
+ 
  

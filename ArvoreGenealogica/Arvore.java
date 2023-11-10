@@ -6,23 +6,19 @@ public class Arvore {
     public Arvore(){
         this.root = null;
     }
-    //construtor da arvore, com a raiz nula
 
     public Arvore(Nodo n){
         this.root = n;
         this.terrasPrimGuerreiro = root.getTerra();
     }
-    //outro constutor que já define uma raíz
 
     public boolean isEmpty() {
         return root == null;
     }
-    //verifica se a raíz é nula
 
     public void insertRoot (Nodo n){
         this.root = n;
     }
-    //insere um nodo raíz
 
     public Nodo getRoot() {
         return root;
@@ -37,7 +33,7 @@ public class Arvore {
             return false;
         }
 
-        if(atual.getNome().equals(pai)){
+        if(atual.getNome().equalsIgnoreCase(pai)){
             Nodo novoFilho = new Nodo(filho, terras);
             novoFilho.setPai(atual);
             atual.getListaFilhos().add(novoFilho);
@@ -57,7 +53,7 @@ public class Arvore {
             return null;
         }
 
-        if(atual.getNome().equals(nome)){
+        if(atual.getNome().equalsIgnoreCase(nome)){
             return atual;
         }
 
@@ -67,7 +63,6 @@ public class Arvore {
                 return nodoEncontrado;
             }
         }
-        
         return null;
     }
 }
