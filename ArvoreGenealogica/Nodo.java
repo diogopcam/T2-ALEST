@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 public class Nodo {
     private String nome;
+    private Nodo pai;
     private int terra;
     private ArrayList<Nodo> listaFilhos;
 
@@ -8,8 +9,16 @@ public class Nodo {
     public Nodo(String nome, int terra){
         this.nome = nome;
         this.terra = terra;
-        //this.pai = null;
+        this.pai = null;
         listaFilhos = new ArrayList<>();
+    }
+
+    public void setPai(Nodo pai){
+        this.pai = pai;
+    }
+
+    public Nodo getPai(){
+        return this.pai;
     }
 
     public String getNome() {
@@ -43,11 +52,18 @@ public class Nodo {
     public void nodoToString(){
         System.out.println("Nome do nodo: "+getNome());
         System.out.println("Quantidade de terras: "+getTerra());
+        if(getPai() != null){
+            System.out.println("Pai do nodo: "+getPai().getNome());
+        } else {
+             System.out.println("Nenhum pai definido pois essa é a raíz da Árvore - "+getNome());
+        }
+        System.out.println(" ");
     }
 
     public void filhosToString(){
         for(Nodo n:this.listaFilhos){
             System.out.println("Nome do nodo: "+n.getNome());
+            System.out.println("Pai do nodo: "+n.getPai().getNome());
             System.out.println("Quantidade de terras: "+n.getTerra());
             System.out.println(" ");
         }

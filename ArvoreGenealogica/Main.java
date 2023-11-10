@@ -14,14 +14,6 @@ public class Main{
             int quantTerras = Integer.parseInt(camposSeparados[0]);
             //Essa é a quantidade de guerras do primeiro guerreiro
 
-            // Exemplo: 103787
-
-            System.out.println("Funcionou: "+quantTerras);
-
-            //Segunda linha: define a raíz e inicia a árvore
-            
-            // Exemplo: Thorgestax Deldriralex 4626
-            //          PAI        FILHO       TERRAS CONQUISTADAS
 
             String paiFilhoTerras = entradaSaida.getEntrada().nextLine();
             String[] divide = paiFilhoTerras.split(" ");
@@ -29,43 +21,44 @@ public class Main{
             String filho = divide[1];
             int terras = Integer.parseInt(divide[2]);
             Nodo raiz = new Nodo(primeiroGuerreiro, quantTerras);
-            
             Arvore arvore = new Arvore(raiz);
-            // Aqui inicializei a árvore com o primeiro nome da linha, que representa a raíz da árvore e a quantidade
-            // de terras do primeiro guerreiro
+            // Segunda linha (cria o primeiro guerreiro(raíz))
 
-            
-            arvore.getRoot().nodoToString();
-            // Definição da raíz da árvore funcionando também!
+            raiz.nodoToString();
 
-            Nodo primFilho = new Nodo(filho, quantTerras + terras);
-            raiz.addFilho(primFilho);
-             // Aqui o primeiro filho será definido (precisamos de um método que, de acordo com o aumento do número
-            // de filhos, divide o número de terras e atualiza todos os números dos outros filhos)
-
-            // Apresentar os filhos
-
-            // A partir da terceira linha podemos fazer um laço de repetição para inserir os filhos e definir a quantidade 
-            // de terras até o Scanner encontrar uma linha em branco
-            // 
-
-
-            //while(entradaSaida.getEntrada().hasNextLine()){
-            String linha = entradaSaida.getEntrada().nextLine();
-            String[] pft = linha.split(" ");
-            String pai = pft[0];
-            String filhoDois = pft[1];
-            int terra = Integer.parseInt(pft[2]);
-            // Identifica quem é o pai (guerreiro raíz)
-            if(arvore.addFilhoRec(raiz, pai, filhoDois, terra) == true){
-                System.out.println("Primeiro filho adicionado com sucesso!");
+            if(arvore.addFilhoRec(raiz, primeiroGuerreiro, filho, terras)){
+                System.out.println("Recursividade funcionando!");
+                raiz.filhosToString();
             } else {
-                System.out.println("Erro!");
+                System.out.println("Recursividade não funcionando!");
             }
 
-            raiz.filhosToString();
+            String terceiraLinha = entradaSaida.getEntrada().nextLine();
+            String[] terceiraLinhaQuebra = terceiraLinha.split(" ");
+            String paiT = terceiraLinhaQuebra[0];
+            String filhoT = terceiraLinhaQuebra[1];
+            int terrasT = Integer.parseInt(terceiraLinhaQuebra[2]);
 
-        }
+            if(arvore.addFilhoRec(raiz, paiT, filhoT, terrasT)){
+                System.out.println("Recursividade funcionando!");
+                //arvore.retornaNodo(raiz, paiT).filhosToString();
+            } else {
+                System.out.println("Recursividade não funcionando!");
+            }
+
+            String quartaLinha = entradaSaida.getEntrada().nextLine();
+            String[] quartaLinhaQuebra = quartaLinha.split(" ");
+            String paiQ = quartaLinhaQuebra[0];
+            String filhoQ = quartaLinhaQuebra[1];
+            int terrasQ = Integer.parseInt(quartaLinhaQuebra[2]);
+
+            if(arvore.addFilhoRec(raiz, paiQ, filhoQ, terrasQ)){
+                System.out.println("Recursividade funcionando!");
+                arvore.retornaNodo(raiz, paiQ).filhosToString();
+            } else {
+                System.out.println("Recursividade não funcionando!");
+            }
     }
+}
 }
 

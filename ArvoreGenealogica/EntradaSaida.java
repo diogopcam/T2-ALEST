@@ -7,12 +7,9 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class EntradaSaida {
-    Scanner entrada; 
-    //DEFINE A ENTRADA DE DADOS                // Atributo para entrada de dados (entrada)
-    PrintStream saidaPadrao = System.out;   // Guarda a saida padrao - tela(console) (saida)
-    //SAIDA 
+    Scanner entrada;            
+    PrintStream saidaPadrao = System.out;   
 
-    // Construtor
     public EntradaSaida() {
         try {
             BufferedReader streamEntrada = new BufferedReader(new FileReader("entradatribo.txt"));
@@ -22,16 +19,9 @@ public class EntradaSaida {
         } catch (Exception e) {
             System.out.println(e);
         }
-        Locale.setDefault(Locale.ENGLISH);   // Ajusta para ponto decimal
+        Locale.setDefault(Locale.ENGLISH); 
         entrada.useLocale(Locale.ENGLISH);
     }
-
-    // Restaura E/S padrao de tela(console)/teclado
-    private void restauraES() {
-        System.setOut(saidaPadrao);
-        entrada = new Scanner(System.in);
-    }
-
 
     public Scanner getEntrada() {
         return entrada;

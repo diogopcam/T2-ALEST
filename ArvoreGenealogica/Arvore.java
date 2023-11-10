@@ -5,7 +5,6 @@ public class Arvore {
 
     public Arvore(){
         this.root = null;
-
     }
     //construtor da arvore, com a raiz nula
 
@@ -33,28 +32,42 @@ public class Arvore {
         return this.terrasPrimGuerreiro;
     }
 
-
-    // public void adicionarFilho(String nomePai, String nomeFilho) {
-    //     adicionarFilhoRecursivo(root, nomePai, nomeFilho);
-    // }
-
-
-    public boolean addFilhoRec(Nodo root, String nomePai, String nomeFilho, int terras) {
-        if (root == null) {
-            return false; // Guerreiro não encontrado
+    public boolean addFilhoRec(Nodo atual, String pai, String filho, int terras){
+        if(atual == null){
+            return false;
         }
-    
-        if (root.getNome().equals(nomePai)) {
-            Nodo novoFilho = new Nodo(nomeFilho, terras); // Você pode definir a quantidade de terras apropriada aqui
-            root.addFilho(novoFilho);
-            return true; // Filho adicionado com sucesso
+
+        if(atual.getNome().equals(pai)){
+            Nodo novoFilho = new Nodo(filho, terras);
+            novoFilho.setPai(atual);
+            atual.getListaFilhos().add(novoFilho);
+            return true;
         }
-    
-        for (Nodo filho : root.getListaFilhos()) {
-            if (addFilhoRec(filho, nomePai, nomeFilho, terras)) {
-                return true; // Filho encontrado e adicionado
+
+        for (Nodo filhos : atual.getListaFilhos()){
+            if (addFilhoRec(filhos, pai, filho, terras)){
+                return true;
             }
         }
-        return false; // Guerreiro não encontrado neste subárvore
+        return false;
+    }
+
+    public Nodo retornaNodo(Nodo atual, String nome){
+        if(atual == null){
+            return null;
+        }
+
+        if(atual.getNome().equals(nome)){
+            return atual;
+        }
+
+        for(Nodo comp : atual.getListaFilhos()){
+            Nodo nodoEncontrado = retornaNodo(comp, nome);
+            if(nodoEncontrado != null){
+                return nodoEncontrado;
+            }
+        }
+        
+        return null;
     }
 }

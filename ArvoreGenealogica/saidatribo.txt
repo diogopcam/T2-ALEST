@@ -1,10 +1,19 @@
-Funcionou: 800
 Nome do nodo: NODORAIZ
 Quantidade de terras: 800
-Primeiro filho adicionado com sucesso!
-Nome do nodo: NODOFILHO
-Quantidade de terras: 1100
+Nenhum pai definido pois essa é a raíz da Árvore - NODORAIZ
  
-Nome do nodo: NODOFILHOREC
-Quantidade de terras: 800
+Recursividade funcionando!
+Nome do nodo: NODOFILHO
+Pai do nodo: NODORAIZ
+Quantidade de terras: 300
+ 
+Recursividade funcionando!
+Recursividade funcionando!
+Nome do nodo: NODOFILHODOIS
+Pai do nodo: NODOFILHO
+Quantidade de terras: 400
+ 
+Nome do nodo: NODOFILHOTRES
+Pai do nodo: NODOFILHO
+Quantidade de terras: 200
  
