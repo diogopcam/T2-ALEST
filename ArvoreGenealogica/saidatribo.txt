@@ -1,41 +1,89 @@
 Recursividade funcionando!
-Nome do nodo: FILHO
-Pai do nodo: PAI
-Quantidade de terras: 200
+Nome do nodo: Deldriralex
+Pai do nodo: Thorgestax
+Quantidade de terras: 4626
  
 Recursividade funcionando!
-Nome do nodo: FILHODOIS
-Quantidade de terras: 300
-Pai do nodo: PAI
- 
- 
-Recursividade funcionando!
-Nome do nodo: NETO
-Quantidade de terras: 200
-Pai do nodo: FILHO
+Nome do nodo: Jocgnibardyx
+Quantidade de terras: 3530
+Pai do nodo: Thorgestax
  
  
 Recursividade funcionando!
-Nome do nodo: NETODOIS
-Quantidade de terras: 100
-Pai do nodo: FILHO
+Nome do nodo: Diorflimhikox
+Quantidade de terras: 5154
+Pai do nodo: Jocgnibardyx
  
  
 Recursividade funcionando!
-Nome do nodo: FILHOTRES
-Quantidade de terras: 400
-Pai do nodo: PAI
+Nome do nodo: Grutohiaux
+Quantidade de terras: 5797
+Pai do nodo: Jocgnibardyx
  
  
 Recursividade funcionando!
-Nome do nodo: BISNETO
-Quantidade de terras: 100
-Pai do nodo: NETO
+Nome do nodo: Docmangax
+Quantidade de terras: 4471
+Pai do nodo: Jocgnibardyx
  
  
 Recursividade funcionando!
-Nome do nodo: SEGUNDOBISNETO
-Quantidade de terras: 50
-Pai do nodo: NETO
+Nome do nodo: Delscatorflex
+Quantidade de terras: 6180
+Pai do nodo: Jocgnibardyx
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Cristipix
+Quantidade de terras: 5299
+Pai do nodo: Jocgnibardyx
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Pacmonumicynax
+Quantidade de terras: 2056
+Pai do nodo: Jocgnibardyx
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Alteetoflex
+Quantidade de terras: 6042
+Pai do nodo: Thorgestax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Delrenmax
+Quantidade de terras: 6080
+Pai do nodo: Thorgestax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Diormanclox
+Quantidade de terras: 4736
+Pai do nodo: Delrenmax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Neppanpix
+Quantidade de terras: 2249
+Pai do nodo: Delrenmax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Klodrimanrix
+Quantidade de terras: 5353
+Pai do nodo: Delrenmax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Mirtpliblepkox
+Quantidade de terras: 3177
+Pai do nodo: Delrenmax
+ 
+ 
+Recursividade funcionando!
+Nome do nodo: Frinvinulamax
+Quantidade de terras: 3189
+Pai do nodo: Thorgestax
  
  
