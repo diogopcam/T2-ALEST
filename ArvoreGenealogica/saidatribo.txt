@@ -1,89 +1,89 @@
-Recursividade funcionando!
+Nome do nodo: Thorgestax
+Quantidade de terras: 103787
+Nenhum pai definido pois essa é a raíz da Árvore - Thorgestax
+Geração do Nodo: 1
+ 
 Nome do nodo: Deldriralex
+Quantidade de terras: 25383
 Pai do nodo: Thorgestax
-Quantidade de terras: 4626
+Geração do Nodo: 2
  
-Recursividade funcionando!
 Nome do nodo: Jocgnibardyx
-Quantidade de terras: 3530
+Quantidade de terras: 24287
 Pai do nodo: Thorgestax
+Geração do Nodo: 2
  
- 
-Recursividade funcionando!
 Nome do nodo: Diorflimhikox
-Quantidade de terras: 5154
+Quantidade de terras: 9201
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Grutohiaux
-Quantidade de terras: 5797
+Quantidade de terras: 9844
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Docmangax
-Quantidade de terras: 4471
+Quantidade de terras: 8518
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Delscatorflex
-Quantidade de terras: 6180
+Quantidade de terras: 10227
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Cristipix
-Quantidade de terras: 5299
+Quantidade de terras: 9346
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Pacmonumicynax
-Quantidade de terras: 2056
+Quantidade de terras: 6103
 Pai do nodo: Jocgnibardyx
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Alteetoflex
-Quantidade de terras: 6042
+Quantidade de terras: 26799
 Pai do nodo: Thorgestax
+Geração do Nodo: 2
  
- 
-Recursividade funcionando!
 Nome do nodo: Delrenmax
-Quantidade de terras: 6080
+Quantidade de terras: 26837
 Pai do nodo: Thorgestax
+Geração do Nodo: 2
  
- 
-Recursividade funcionando!
 Nome do nodo: Diormanclox
-Quantidade de terras: 4736
+Quantidade de terras: 11445
 Pai do nodo: Delrenmax
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Neppanpix
-Quantidade de terras: 2249
+Quantidade de terras: 8958
 Pai do nodo: Delrenmax
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Klodrimanrix
-Quantidade de terras: 5353
+Quantidade de terras: 12062
 Pai do nodo: Delrenmax
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Mirtpliblepkox
-Quantidade de terras: 3177
+Quantidade de terras: 9886
 Pai do nodo: Delrenmax
+Geração do Nodo: 3
  
- 
-Recursividade funcionando!
 Nome do nodo: Frinvinulamax
-Quantidade de terras: 3189
+Quantidade de terras: 21075
 Pai do nodo: Thorgestax
+Geração do Nodo: 2
  
+Nodo com a maior quantidade de terras: 
+-------------------------------------
  
+Nome do nodo: Klodrimanrix
+Quantidade de terras: 12062
+Pai do nodo: Delrenmax
+Geração do Nodo: 3
+ 
+-------------------------------------

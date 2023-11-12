@@ -1,6 +1,4 @@
-import static org.junit.jupiter.api.DynamicTest.stream;
-import org.junit.platform.engine.support.hierarchical.Node;
-
+import java.util.ArrayList;
 public class Main{
     public static void main(String args[]){
 
@@ -13,7 +11,7 @@ public class Main{
             String[] camposSeparados = primeiraLinha.split(" ");
             int quantTerras = Integer.parseInt(camposSeparados[0]);
 
-            // 17 - 30: Fora do loop, crio o primeiro guerreiro (raíz) e seu filho
+            // 17 - 30: Fora do loop, o primeiro guerreiro (raíz) e seu filho são criados
             String paiFilhoTerras = entradaSaida.getEntrada().nextLine();
             String[] divide = paiFilhoTerras.split(" ");
             String primeiroGuerreiro = divide[0];
@@ -21,14 +19,7 @@ public class Main{
             int terras = Integer.parseInt(divide[2]);
             Nodo raiz = new Nodo(primeiroGuerreiro, quantTerras);
             Arvore arvore = new Arvore(raiz);
-
-            // 26 - 31: Linhas de teste para confirmar o funcionamento do método addFilhoRec
-            if(arvore.addFilhoRec(raiz, primeiroGuerreiro, filho, terras)){
-                System.out.println("Recursividade funcionando!");
-                raiz.filhosToString();
-            } else {
-                System.out.println("Recursividade não funcionando!");
-            }
+            arvore.addFilhoRec(raiz, primeiroGuerreiro, filho, terras);
 
             // 34 - 53: Loop de repetição para criação da árvore
             while(entradaSaida.getEntrada().hasNextLine()){
@@ -43,14 +34,25 @@ public class Main{
 
                 boolean teste = arvore.addFilhoRec(raiz, paiL, filhoL, terrasL);
 
-                if(teste == true){
-                    System.out.println("Recursividade funcionando!");
-                    arvore.retornaNodo(raiz, filhoL).nodoToString();
+                if(teste == false){
+                    System.out.println("Esse pai não existe!");
                     System.out.println(" ");
-                } else {
-                    System.out.println("Recursividade não funcionando ou esse pai não existe!");
                 }
             }
+            
+            arvore.dividirTerrasRecursivo(raiz);
+            arvore.raizToString();
+            arvore.apresentaTodos(raiz);
+            arvore.setGeracoes(arvore.calculaGeracoes(raiz));
+    
+            ArrayList<Nodo> nodosUltimaGeracao = arvore.ultimaGeracao(raiz);
+            Nodo procurado = arvore.maiorQuantidade(nodosUltimaGeracao);
+
+            System.out.println("Nodo com a maior quantidade de terras: ");
+            System.out.println("-------------------------------------");
+            System.out.println(" ");
+            procurado.nodoToString();
+            System.out.println("-------------------------------------");
     }
 }
 }

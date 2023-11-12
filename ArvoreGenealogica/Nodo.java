@@ -3,6 +3,7 @@ public class Nodo {
     private String nome;
     private Nodo pai;
     private int terra;
+    private int geracao;
     private ArrayList<Nodo> listaFilhos;
 
     //Construtor
@@ -10,7 +11,16 @@ public class Nodo {
         this.nome = nome;
         this.terra = terra;
         this.pai = null;
+        this.geracao = 0;
         listaFilhos = new ArrayList<>();
+    }
+
+    public void setGeracao(int geracao) {
+        this.geracao = geracao;
+    }
+    
+    public int getGeracao() {
+        return geracao;
     }
 
     public void setPai(Nodo pai){
@@ -45,10 +55,6 @@ public class Nodo {
         return listaFilhos;
     }
 
-    // public int defineTerrasFilho(){
-    //     //quantidade de terras do pai divididas pela quantidade de filhos
-    // }
-
     public void nodoToString(){
         System.out.println("Nome do nodo: "+getNome());
         System.out.println("Quantidade de terras: "+getTerra());
@@ -57,6 +63,7 @@ public class Nodo {
         } else {
              System.out.println("Nenhum pai definido pois essa é a raíz da Árvore - "+getNome());
         }
+        System.out.println("Geração do Nodo: "+getGeracao());
         System.out.println(" ");
     }
 
