@@ -6,7 +6,6 @@ public class Nodo {
     private int geracao;
     private ArrayList<Nodo> listaFilhos;
 
-    //Construtor
     public Nodo(String nome, int terra){
         this.nome = nome;
         this.terra = terra;

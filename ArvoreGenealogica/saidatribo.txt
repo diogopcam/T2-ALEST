@@ -1,89 +1,44 @@
-Nome do nodo: Thorgestax
-Quantidade de terras: 103787
-Nenhum pai definido pois essa é a raíz da Árvore - Thorgestax
+Nome do nodo: SALOMAO
+Quantidade de terras: 5000
+Nenhum pai definido pois essa é a raíz da Árvore - SALOMAO
 Geração do Nodo: 1
  
-Nome do nodo: Deldriralex
-Quantidade de terras: 25383
-Pai do nodo: Thorgestax
+Nome do nodo: VALDIR
+Quantidade de terras: 2600
+Pai do nodo: SALOMAO
 Geração do Nodo: 2
  
-Nome do nodo: Jocgnibardyx
-Quantidade de terras: 24287
-Pai do nodo: Thorgestax
+Nome do nodo: DIOGO
+Quantidade de terras: 1650
+Pai do nodo: VALDIR
+Geração do Nodo: 3
+ 
+Nome do nodo: DEIVID
+Quantidade de terras: 1450
+Pai do nodo: VALDIR
+Geração do Nodo: 3
+ 
+Nome do nodo: VALMIR
+Quantidade de terras: 2700
+Pai do nodo: SALOMAO
 Geração do Nodo: 2
  
-Nome do nodo: Diorflimhikox
-Quantidade de terras: 9201
-Pai do nodo: Jocgnibardyx
+Nome do nodo: JUNIOR
+Quantidade de terras: 1450
+Pai do nodo: VALMIR
 Geração do Nodo: 3
  
-Nome do nodo: Grutohiaux
-Quantidade de terras: 9844
-Pai do nodo: Jocgnibardyx
+Nome do nodo: CASSIANO
+Quantidade de terras: 1500
+Pai do nodo: VALMIR
 Geração do Nodo: 3
- 
-Nome do nodo: Docmangax
-Quantidade de terras: 8518
-Pai do nodo: Jocgnibardyx
-Geração do Nodo: 3
- 
-Nome do nodo: Delscatorflex
-Quantidade de terras: 10227
-Pai do nodo: Jocgnibardyx
-Geração do Nodo: 3
- 
-Nome do nodo: Cristipix
-Quantidade de terras: 9346
-Pai do nodo: Jocgnibardyx
-Geração do Nodo: 3
- 
-Nome do nodo: Pacmonumicynax
-Quantidade de terras: 6103
-Pai do nodo: Jocgnibardyx
-Geração do Nodo: 3
- 
-Nome do nodo: Alteetoflex
-Quantidade de terras: 26799
-Pai do nodo: Thorgestax
-Geração do Nodo: 2
- 
-Nome do nodo: Delrenmax
-Quantidade de terras: 26837
-Pai do nodo: Thorgestax
-Geração do Nodo: 2
- 
-Nome do nodo: Diormanclox
-Quantidade de terras: 11445
-Pai do nodo: Delrenmax
-Geração do Nodo: 3
- 
-Nome do nodo: Neppanpix
-Quantidade de terras: 8958
-Pai do nodo: Delrenmax
-Geração do Nodo: 3
- 
-Nome do nodo: Klodrimanrix
-Quantidade de terras: 12062
-Pai do nodo: Delrenmax
-Geração do Nodo: 3
- 
-Nome do nodo: Mirtpliblepkox
-Quantidade de terras: 9886
-Pai do nodo: Delrenmax
-Geração do Nodo: 3
- 
-Nome do nodo: Frinvinulamax
-Quantidade de terras: 21075
-Pai do nodo: Thorgestax
-Geração do Nodo: 2
  
 Nodo com a maior quantidade de terras: 
 -------------------------------------
  
-Nome do nodo: Klodrimanrix
-Quantidade de terras: 12062
-Pai do nodo: Delrenmax
+Nome do nodo: DIOGO
+Quantidade de terras: 1650
+Pai do nodo: VALDIR
 Geração do Nodo: 3
  
 -------------------------------------
